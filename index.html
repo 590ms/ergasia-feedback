@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Feedback Collector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Send Us Your Feedback</h1>
+    <form id="feedbackForm" method="POST" action="submit.php">
+      <input type="text" name="name" placeholder="Your name " />
+      <input type="email" name="email" placeholder="Your email " />
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="feedbackDisplay">
+      <!-- Εδώ (προαιρετικά) εμφανίζονται προηγούμενα σχόλια -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
